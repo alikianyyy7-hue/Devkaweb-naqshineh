@@ -1,5 +1,5 @@
 # Devkaweb-naqshineh
-# Naqshineh – Online Traditional Clothing Store
+
 
 **Naqshineh** is an online store dedicated to traditional Iranian clothing, designed and developed by the **Devkaweb** team.  
 Our main mission is to **promote Iranian culture** through modern and user-friendly digital solutions.
