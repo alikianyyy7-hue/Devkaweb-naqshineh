@@ -33,14 +33,6 @@ Our main mission is to **promote Iranian culture** through modern and user-frien
 - Custom JavaScript  
 - TailwindCSS  
 
----
-
-##  Installation
-1. Clone the repository or download the project files.  
-2. Set up a local server environment (e.g., XAMPP, WAMP) or use a PHP-supported hosting.  
-3. Import the database and configure the `wp-config.php` file.  
-4. Upload the project files to the server or place them in the `htdocs` folder for local testing.  
-5. Access the website through your localhost or domain.  
 
 ---
 
@@ -82,20 +74,7 @@ Cause: like.js was not enqueued site-wide.
 
 Solution: Updated functions.php to enqueue the script globally:
 
-function mytheme_enqueue_scripts() {
-    wp_enqueue_script('jquery');
-    wp_enqueue_script(
-        'like-js',
-        get_template_directory_uri() . '/like.js',
-        array('jquery'),
-        null,
-        true
-    );
-    wp_localize_script('like-js', 'like_ajax', array(
-        'ajaxurl' => admin_url('admin-ajax.php')
-    ));
-}
-add_action('wp_enqueue_scripts', 'mytheme_enqueue_scripts');
+<pre> ```php function mytheme_enqueue_scripts() { wp_enqueue_script('jquery'); wp_enqueue_script( 'like-js', get_template_directory_uri() . '/like.js', array('jquery'), null, true ); wp_localize_script('like-js', 'like_ajax', array( 'ajaxurl' => admin_url('admin-ajax.php') )); } add_action('wp_enqueue_scripts', 'mytheme_enqueue_scripts'); ``` </pre>
 
 5. Contact Form Validation Issue
 
