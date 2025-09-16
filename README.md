@@ -53,10 +53,10 @@ Cause: The like state was only updated in JavaScript and not stored.
 
 Solution:
 
-Added cookies (liked_{post_id}) to persist likes for guest users.
+Added cookies ```(liked_{post_id})``` to persist likes for guest users.
 
 Checked cookies in PHP before rendering the like button:
-$user_liked = isset($_COOKIE['liked_' . get_the_ID()]);
+```$user_liked = isset($_COOKIE['liked_' . get_the_ID()]);```
 
 3. Heart Icon Not Showing for Previous Likes
 
