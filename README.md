@@ -16,7 +16,7 @@ Our main mission is to **promote Iranian culture** through modern and user-frien
 - Online payment integration  
 - Blog section for cultural articles  
 - Dedicated sections: About Us, Contact Us, Products, and FAQ  
-
+- Dynamic customization of icons and texts for Contact Us, About Us, and FAQ sections via WordPress Customizer.
 ---
 
 ##  Values and Future Goals
@@ -101,6 +101,14 @@ Solution:
 Used flex-col for mobile (image above text).
 
 Applied sm:flex-row for tablet/desktop (image on the right, text on the left).
+
+7. Dynamic Management of Icons and Texts
+
+Need: Admins required an easy way to change icons and texts in sections such as Contact Us, About Us, and FAQ.
+
+Solution: Implemented WordPress Customizer options, allowing dynamic updates without editing code.
+
+Result: Site administrators can now modify icons and texts directly from the WordPress dashboard.
 
 Achieved consistent responsive design across all devices.
 Team
